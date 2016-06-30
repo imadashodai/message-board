@@ -2,13 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.field_with_errors #message_name{
+.field_with_errors #inputname{
     display: inline-block;
     border: 1px solid #f00;
     width: 100%;
 }
 
-.field_with_errors #message_body{
+.field_with_errors #inputmain{
     display: inline-block;
     border: 1px solid #f00;
     width: 100%;

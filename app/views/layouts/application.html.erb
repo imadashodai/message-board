@@ -8,26 +8,43 @@
   <%= csrf_meta_tags %>
   <style>
     body{
+      width:100%;
       background-color:#f5f5dc;
     }
-     .navbar-brand {
+    
+     .navbar {
+      width:100%;
+      padding:20px 15px;
       font-family: arial black;
-      padding: 50px 0 ;
-      font-size: 45px;
     }
     
-    ul {
-      margin-left: 90px;
-      padding-bottom: 20px;
+    .navbar-brand{
+      font-size:40px;
+    }
+    
+    .nav-pills {
+      padding: 20px 0 20px 50px;
+      font-size: 30px;
+    }
+    
+    .panel {
       font-size: 20px;
     }
     
     .container {
-      font-size: 20px;
+      margin:20px 50px;
+      padding:20px 0;
+      font-size: 40px;
     }
-    
+
+    .field_with_errors #inputname {
+      width:200px;
+    }
+
     .btn {
-      margin: 20px 0;
+      width:100%;
+      margin: 30px 0;
+      margin-left:auto;
       font-size: 20px;
     }
     
@@ -35,17 +52,17 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Message Board</a>
+        <a class="container-fluid navbar-brand" href="https://techacademy-shoday10.c9users.io/">Message Board</a>
       </div>
     </div>
   </nav>
-  <ul class="nav nav-pills">
-    <li role="presentation" class="active"><a href="#">Messages</a></li>
-    <li role="presentation"><a href="#">Profile</a></li>
-  </ul>
-  <div class="container">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="https://techacademy-shoday10.c9users.io/">Messages</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+    </ul>
+  <div class="container-fluid">
     <% if notice %>
       <div class="alert alert-info">
         <%= notice %>

@@ -12,16 +12,17 @@
         </div>
     <% end %>
     <div class="form_group">
-        <label for="inputname" class="col-ms-2 control-label">名前:</label>
-        <%= f.text_field :name, id: "inputname", class: "col-ms-10 form-fontrol" %>
+        <label for="input_name" class="col-ms-2 control-label">名前:</label><br>
+        <%= f.text_field :name, id: "inputname", class: "col-ms-10 form-fontrol", size: "23" %>
     </div>
     <br>
     <div class="form_group">
-        <label for="inputmain" class="col-ms-2 control-label">内容:</label>
+        <label for="input_main" class="col-ms-2 control-label">内容:</label>
         <%= f.text_area :body, id: "inputmain", class: "col-ms-10 form-control", size: "10x10" %>
     </div>
     <div class="form_group">
-        <div class="col-sm-11 col-xs-10"></div>
-        <%= f.submit "投稿", class: "col-sm-1 col-xs-2 btn btn-sm btn-primary" %>
+        <div class="conrainer-fluid">
+        <%= f.submit "投稿", class: "btn btn-sm btn-primary" %>
+        </div>
     </div>
 <% end %>
