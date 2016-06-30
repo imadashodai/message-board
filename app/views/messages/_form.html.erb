@@ -15,7 +15,10 @@
         <label for="input_name" class="col-ms-2 control-label">名前:</label><br>
         <%= f.text_field :name, id: "inputname", class: "col-ms-10 form-fontrol", size: "23" %>
     </div>
-    <br>
+    <div class="form_group">
+        <label for="input_age" class="col-ms-2 control-label">年齢:</label><br>
+        <%= f.text_field :age, id: "inputage", class: "col-ms-10 form-fontrol", size: "10" %>
+    </div>
     <div class="form_group">
         <label for="input_main" class="col-ms-2 control-label">内容:</label>
         <%= f.text_area :body, id: "inputmain", class: "col-ms-10 form-control", size: "10x10" %>
